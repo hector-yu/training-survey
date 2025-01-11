@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>2025 培训需求调查</title>
+</head>
+<body>
+  <div class="container">
+    <h1>2025 培训需求调查</h1>
+    <p>感谢您参与此次问卷调查！您的反馈将帮助我们制定更符合需求的培训计划。</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="position">请选择您的岗位职级：</label>
+        <select id="position" name="position" required>
+          <option value="" disabled selected>请选择</option>
+          <option value="基层员工">基层员工</option>
+          <option value="中层管理人员">中层管理人员</option>
+          <option value="高层管理人员">高层管理人员</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="department">请选择您所在的部门：</label>
+        <select id="department" name="department" required>
+          <option value="" disabled selected>请选择</option>
+          <option value="销售/市场">销售/市场</option>
+          <option value="运营/生产">运营/生产</option>
+          <option value="技术/研发">技术/研发</option>
+          <option value="行政/人力资源">行政/人力资源</option>
+          <option value="财务/审计">财务/审计</option>
+          <option value="其他">其他</option>
+        </select>
+      </div>
+      <div id="dynamic-questions" class="form-group">
+        <!-- 动态生成问题 -->
+      </div>
+      <button type="submit" class="btn">提交问卷</button>
+    </form>
+  </div>
+  <script src="survey.js"></script>
+</body>
+</html>
